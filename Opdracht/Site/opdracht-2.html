@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+input[type=text] {
+    width: 90%;
+    padding: 10px;
+	margin: 10px 10px 10px 10px;
+    display: block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.registerbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    opacity: 0.9;
+	margin-left: 35%;
+	
+}
+
+
+
+.signin {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+
+#wrapper{
+margin-top: 10%;
+	border: solid white;
+	height: 400px;
+	width: 500px;
+	box-shadow: 2px 2px 5px 5px black;
+	
+}
+
+label{
+	margin: 10px 10px 10px 10px;
+}
+
+
+
+
+#form-header{
+margin-left: 40%;
+}
+
+#content{
+  margin-left: 10%;
+}
+</style>
+</head>
+<body>
+
+
+<ul>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="opdracht-1.html">Opdracht 1</a></li>
+  <li><a class="active" href="opdracht-2.html">Opdracht 2</a></li>
+</ul>
+
+<div style="margin-left:45%;padding:1px 16px;">
+
+      <div id="wrapper"> 
+	   	<form action="https://brandnewguys.co/.netlify/functions/heimdall" method="post">
+			<div id="form-header">
+				<h2> Formulier </h2>
+			</div>
+			<div id="input-fields">
+		
+				<label for="Naam"><b>Naam</b></label>
+				<input type="text" placeholder="Naam" name="Naam" required>
+
+				<label for="Email"><b>Email</b></label>
+				<input type="text" placeholder="Email" name="Email" required>
+
+				<label for="Brownie points"><b> Brownie points</b></label>
+				<input type="text" placeholder="Brownie points" name="Brownie points" required>
+
+			</div>
+			<button type="submit" class="registerbtn">Submit</button>
+		</form>
+	</div>
+	   
+
+	</div>
+
+</body>

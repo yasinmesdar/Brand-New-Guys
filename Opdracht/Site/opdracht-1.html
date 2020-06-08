@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+textarea{
+  background-color: color;
+  width: 700px;
+  height: 300px;
+}
+
+
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="home.html">Home</a></li>
+  <li><a class="active" href="opdracht-1.html">Opdracht 1</a></li>
+  <li><a href="opdracht-2.html">Opdracht 2</a></li>
+</ul>
+
+<div style="margin-left:25%;padding:1px 16px;height:1000px;">
+  <h2> Opdracht 1</h2>
+  <h4>
+      De eerste opdracht is het maken van een "Hello World". Dit kan je natuurlijk doen met verschilende<br> talen. 
+      Ik heb ervoor gekozen om dit in de talen HTML, Javascript en PHP te doen. In het textvak<br> hieronder is de 
+	  code te zien die ik hiervoor heb gebuikt.
+  </h4>
+ 
+    <textarea> 
+      Hello world met behulp van een html "p" tag
+      <p> Hello, World!</p>
+	  
+      Hello world met behulp van de javascript functie document.write()
+      document.write('Hello World'); 
+	  
+      Hello world met behulp van de javascript functie alert()
+      alert('Hello World'); 
+	  
+      Hello world met behulp van de javascript functie console.log()
+      console.log('Hello World'); 
+	  
+      Hello world met behulp van de javascript functie document.write()
+      echo "Hello world";
+	</textarea>
+
+	<div>
+	  <p> Resultaat van de HTML tag "p": Hello World </p>
+	  <p> Resultaat van de javascript functie document.write(): <script> document.write('Hello World');</script> </p>
+	  <p> Resultaat van de javascript functie alert(): Het resultaat van de alert functie is de melding "Hello world".  <script> alert('Hello World'); </script></p>
+	  <p> Resultaat van de javascript functie console.log(): Het resultaat van de console functie is alleen te zien in de console van de editor </p>
+	  <p> Resultaat van de PHP functie echo(): Het resultaat van de echo functie is niet te zien omdat er geen webserver met PHP geinstallerd is.</p>
+	</div>
+</div>
+</body>
